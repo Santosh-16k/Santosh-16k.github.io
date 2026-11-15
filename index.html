@@ -50,15 +50,15 @@
 										<h2>Staff Engineer<br>Qualcomm</h2>
 										<p>I make automotive AI models production-ready on Snapdragon hardware. I work directly with OEM and Tier-1 teams to onboard their perception, LLM and GenAI models, then optimize them until they meet latency and accuracy targets.</p>
 										<ul>
-											<li><strong>Optimized and deployed 30+ customer models</strong> (BEV perception, PETR, StreamPETR, DETR, monocular 3D detection, custom transformers, LLMs and VLMs) for automotive OEMs and Tier-1s in Korea, Japan, China and the US <strong>across six Snapdragon automotive SoC platforms</strong>, using ONNX, QNN/QAIRT SDK and Hexagon HTP.</li>
-											<li><strong>Contributed to 3 automotive design wins</strong> by bringing customer models that initially missed their latency targets within KPIs.</li>
-											<li><strong>Development point of contact for a Japanese customer for 2 years, across 20+ models and model snippets</strong>, leading 2 engineers informally.</li>
-											<li><strong>Spent 3 weeks on-site with a Korean OEM, bringing 4 models within their latency KPIs.</strong></li>
-											<li><strong>280x faster: single-handedly cut a customer's 3D perception model from 56 s to 200 ms</strong> on target by replacing inefficient gather-based operations with grid-sample and restructuring 5D&ndash;7D tensors to 4D for the HTP backend.</li>
-											<li><strong>Wrote and optimized 10+ Hexagon HVX operator kernels</strong> shipped in QNN/QAIRT SDK releases, including a <strong>3x speedup on the ELU op</strong>.</li>
-											<li><strong>Beat AIMET's automatic mixed precision on both accuracy and latency</strong> through manual tuning: W8A8 baseline with A16 / FP16 on sensitive layers.</li>
-											<li><strong>Profile on-target traces to find bottlenecks</strong>, then apply ONNX graph optimizations: removing redundant ops, aligning tensors to 4D, keeping memory layout consistent and prioritizing VTCM.</li>
+											<li><strong>280x faster: independently cut a customer's 3D perception model from 56 s to 200 ms</strong> on target by replacing inefficient gather-based operations with grid-sample and restructuring 5D&ndash;7D tensors to 4D for the HTP NPU backend.</li>
+											<li><strong>Wrote and optimized 10+ SIMD operator kernels in Hexagon HVX</strong> that shipped in QNN/QAIRT SDK releases, including a <strong>3x speedup on the ELU op</strong>.</li>
+											<li><strong>Optimized and deployed 30+ models</strong> (BEV perception, PETR, StreamPETR, DETR, monocular 3D detection, custom transformers, LLMs and VLMs) for inference <strong>on 6 Snapdragon automotive SoC platforms</strong>, for 6 OEMs and Tier-1s in Korea, Japan, China and the US, using ONNX, QNN/QAIRT SDK and Hexagon HTP.</li>
+											<li><strong>Profiled on-target inference traces to find bottlenecks</strong>, then fixed them through graph changes (removing redundant ops, aligning tensors to 4D, keeping memory layout consistent), new kernels, and placing hot tensors in VTCM.</li>
+											<li><strong>Beat AIMET's automatic mixed precision on both latency and accuracy</strong> by hand-tuning post-training quantization: W8A8 baseline with A16 / FP16 only on sensitive layers.</li>
+											<li><strong>Contributed to 3 automotive design wins.</strong> Brought 4 Korean OEM models within their latency KPIs, one from 29 ms to 17 ms, and found a 3 ms saving on a 20 ms model that was critical to a win in China.</li>
+											<li><strong>Led development for a Japanese customer for 2 years, delivering 20+ models and model snippets</strong> with a team of 2 engineers; spent 3 weeks on-site in Korea working through 4 critical models with the customer's engineers.</li>
 											<li><strong>Brought up the ReCogDrive driving VLM on target</strong> using the GenAI pipeline for scene description and summarization.</li>
+											<li><strong>Applied agentic AI, LLMs and RAG</strong>, using Codex and Claude, to automate model and kernel optimization workflows.</li>
 										</ul>
 								</div>
 								
