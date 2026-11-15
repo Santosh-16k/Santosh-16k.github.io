@@ -22,7 +22,7 @@
 					<section class="intro">
 						<header>
 							<h1>Santosh Shukla</h1>
-							<h2>Senior Lead Machine Learning Engineer</h2>
+							<h2>Staff Machine Learning Engineer</h2>
 							<ul class="actions">
 								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
 							</ul>
@@ -47,11 +47,19 @@
 									
 								</header>
 								<div class="content">
-									<h2>Senior Lead Machine Learning Engineer<br>Qualcomm</h2>
+									<h2>Staff Machine Learning Engineer<br>Qualcomm</h2>
 									<ul>
 										<li>Optimizing Neural Networks for Automotive Domain</li>
 										<li>Onboarding Deep Learning models for Automotive use case</li>
 										<li>Working with Customers to evaluate and provide recommendation for their custom AI models</li>
+										<li>Optimized and deployed 30+ customer models (BEV perception, PETR, StreamPETR, DETR, MonoDGP, custom transformers, LLMs and VLMs) for automotive OEMs and Tier-1s in Korea, Japan, China and the US across six Snapdragon automotive SoC platforms, using ONNX, QNN/QAIRT SDK and Hexagon HTP.</li>
+										<li>Model optimization work contributed to 3 design wins by bringing models that initially missed latency targets within customer KPIs.</li>
+										<li>Single-handedly cut a MonoDGP monocular 3D detection model from 56 s to 200 ms on target (280x) by replacing inefficient gather-based operations with grid-sample and restructuring 5D&ndash;7D tensors to 4D for the HTP backend.</li>
+										<li>Development point of contact for a Japanese customer for 2 years across 8+ models, leading 3 engineers informally; spent 3 weeks on-site with a Korean OEM bringing 4 models within their latency KPIs.</li>
+										<li>Wrote and optimized 10+ Hexagon HVX operator implementations shipped in QNN/QAIRT SDK releases, including a 3x speedup on the ELU op.</li>
+										<li>Deliver quantized models on a W8A8 baseline with manually tuned mixed precision (A16 / FP16 on sensitive layers), improving on AIMET's automatic mixed-precision output in both accuracy and latency.</li>
+										<li>Profile on-target traces to find bottlenecks, then apply ONNX graph optimizations: removing redundant ops, aligning tensors to 4D, keeping memory layout consistent and prioritizing VTCM.</li>
+										<li>Brought up the ReCogDrive driving VLM on target using the GenAI pipeline for scene description and summarization.</li>
 								</div>
 								
 							</section>
