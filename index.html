@@ -50,8 +50,8 @@
 										<h2>Staff Engineer<br>Qualcomm</h2>
 										<p>I make automotive AI models production-ready on Snapdragon hardware. I work directly with OEM and Tier-1 teams to onboard their perception, LLM and GenAI models, then optimize them until they meet latency and accuracy targets.</p>
 										<ul>
-											<li><strong>Wrote and optimized 10+ operator kernels in Hexagon HVX</strong> that shipped in QNN/QAIRT SDK releases, including a <strong>3x speedup on the ELU op</strong>.</li>
 											<li><strong>Optimized and deployed 30+ models</strong> (BEV perception, PETR, StreamPETR, DETR, monocular 3D detection, custom transformers, LLMs and VLMs) for inference <strong>on 6 Snapdragon automotive SoC platforms</strong>, for 6 OEMs and Tier-1s in Korea, Japan, China and the US, using ONNX, QNN/QAIRT SDK and Hexagon HTP.</li>
+											<li><strong>Wrote and optimized 10+ operator kernels in Hexagon HVX</strong> that shipped in QNN/QAIRT SDK releases, including a <strong>3x speedup on the ELU op</strong>.</li>
 											<li><strong>280x faster: independently cut a customer's 3D perception model from 56 s to 200 ms</strong> on target by replacing inefficient gather-based operations with grid-sample and restructuring 5D&ndash;7D tensors to 4D for the HTP NPU backend.</li>
 											<li><strong>Profiled on-target inference traces to find bottlenecks</strong>, then fixed them through graph changes (removing redundant ops, aligning tensors to 4D, keeping memory layout consistent), new kernels, and placing hot tensors in VTCM.</li>
 											<li><strong>Beat AIMET's automatic mixed precision on both latency and accuracy</strong> by hand-tuning post-training quantization: W8A8 baseline with A16 / FP16 only on sensitive layers.</li>
